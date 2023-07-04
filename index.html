@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="nav_bar">
+            <div class="logo">TODO LIST</div>
+            <ul class="nav_ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Completed</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="task_input_section">
+            <div class="add-task">
+                <span class="add-task-label">Add a New Task</span>
+                <button class="add-task-button">+</button>
+            </div>
+            <div class="task-input_box">
+                <input type="text" placeholder="Enter a task" class="new-task-input">
+            </div>
+        </section>
+
+        <section id="task_list">
+            <ul id="task_items">
+
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

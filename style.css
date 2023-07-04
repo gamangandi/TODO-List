@@ -1,0 +1,125 @@
+body {
+    background-image: url("");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #333;
+  }
+
+#nav_bar{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo{
+    font-weight: bold;
+}
+
+.nav_ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li{
+    margin: 0 10px;
+}
+
+li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
+
+li a:hover{
+    background-color: #455eaa;
+    border-radius: 4px;
+}
+
+#task_input{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+    max-width: 560px;
+}
+
+#task_text{
+    background-color:rgb(24, 19, 19);
+    border-radius: 10px 0 0 10px;
+    border: none;
+    width: 300px;
+    padding-left: 8px;
+    color: white;
+    font-size: 14px;
+}
+
+/* .add_task_button{
+    font-size: 17px;
+    padding: 0.5em 2em;
+    border: transparent;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24);
+    background: #2E2E2E;
+    border-radius: 0 10px 10px 0;
+    transition: 0.3s;
+    color: #b7c7ca;
+    border-radius: 0 10px 10px 0;
+}
+
+.add_task_button :hover{
+    background-color: #455eaa;
+} */
+.add-task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.add-task-label {
+    flex: 1;
+    font-weight: bold;
+    color: #fff;
+}
+
+.add-task-button {
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #7d7474;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    
+}
+  
+.task-input {
+    display: none;
+    margin-top: 10px;
+}
+
+.new-task-input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}  
+
+#task-list {
+    list-style-type: none;
+}
+
+#task-items li {
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
