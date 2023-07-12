@@ -2,7 +2,7 @@
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
     border: border-box;
-    background-color: #11100f;
+    background-color: #000000;
 }
 
 .navbar{
@@ -59,7 +59,7 @@
 }
 
 .add-button{
-    background-color: green;
+    background-color: rgb(121, 54, 72);
     height: 38.5px;
     border: 1px solid #ccc;
     border-radius: 0px 5px 5px 0px;
@@ -73,7 +73,7 @@
 }
 
 .add-button:hover {
-    background-color: darkgreen;
+    background-color: rgb(79, 32, 107);
 }
 
 .add-button:active {
@@ -88,7 +88,7 @@
 }
 
 ul li{
-    background-color: #424141;
+    background-color: #000000;
     margin-left: 10px;
     list-style: none;
 }
@@ -96,20 +96,10 @@ ul li{
 ul div{
     display: flex;
     padding: 10px;
-    background-color: #424141;
+    background-color: #000000;
     /* margin-right: 10px; */
     margin-top: 10px;
     width: 80%;
-}
-
-ul div span{
-    background-color: #424141;
-    margin-left: auto;
-    cursor: pointer;
-}
-
-.important{
-    background-color: green;
 }
 
 
