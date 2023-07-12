@@ -10,12 +10,15 @@ function addTask() {
 
     var check_box = document.createElement('input');
     check_box.type = 'checkbox';
+    const star = document.createElement('span');
+    star.innerHTML = '&#9734;'; // Star symbol (☆)
 
     listItem.textContent = taskText;
 
     const new_div = document.createElement('div');
     new_div.append(check_box);
     new_div.append(listItem);
+    new_div.append(star);
 
     taskList.prepend(new_div);
 
@@ -23,5 +26,36 @@ function addTask() {
   }
 }
 
-// Add event listener for the add button
-addButton.addEventListener('click', addTask);
+  // Add event listener for the add button
+  addButton.addEventListener('click', addTask);
+
+// Add event listener for checkbox changes (using event delegation)
+taskList.addEventListener('change', function(event) {
+    const check_box = event.target;
+    const listItem = check_box.parentNode.querySelector('li');
+
+    if (check_box.checked) {
+      listItem.style.textDecoration = 'line-through';
+      taskList.removeChild(check_box.parentNode);
+      taskList.appendChild(check_box.parentNode);
+    } else {
+      listItem.style.textDecoration = 'none';
+      taskList.removeChild(check_box.parentNode);
+      taskList.prepend(check_box.parentNode);
+    }
+  });
+
+
+  
+  taskList.addEventListener('click', function(event) {
+    const star = event.target;
+    const listItem = star.parentNode;
+  
+    if (star.tagName === 'SPAN') {
+      listItem.classList.toggle('important');
+    }
+  });
+  
+
+  
+  
