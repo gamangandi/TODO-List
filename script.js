@@ -10,15 +10,21 @@ function addTask() {
 
     var check_box = document.createElement('input');
     check_box.type = 'checkbox';
-    const star = document.createElement('span');
-    star.innerHTML = '&#9734;'; // Star symbol (☆)
 
     listItem.textContent = taskText;
+
+    let crossButton = document.createElement("button");
+    crossButton.innerHTML = "&#9734;";
+    crossButton.addEventListener("click", function() {
+      listItem.remove();
+      check_box.remove();
+      crossButton.remove();
+    });
 
     const new_div = document.createElement('div');
     new_div.append(check_box);
     new_div.append(listItem);
-    new_div.append(star);
+    new_div.append(crossButton);
 
     taskList.prepend(new_div);
 
@@ -55,6 +61,7 @@ taskList.addEventListener('change', function(event) {
       listItem.classList.toggle('important');
     }
   });
+
   
 
   
