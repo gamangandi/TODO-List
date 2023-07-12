@@ -102,4 +102,14 @@ ul div{
     width: 80%;
 }
 
+ul div span{
+    background-color: #424141;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.important{
+    background-color: green;
+}
+
 
