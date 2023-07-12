@@ -3,40 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
-        <nav id="nav_bar">
-            <div class="logo">TODO LIST</div>
-            <ul class="nav_ul">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tasks</a></li>
-                <li><a href="#">Completed</a></li>
-                <li><a href="#">Settings</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="navbar-todo">
+                <h3>TODO LIST</h3>
+            </div>
+            <div class="navbar-empty">
+
+            </div>
+            <div class="navbar-home navbar-options"><a href="#">Home</a></div>
+            <div class="navbar-tasks navbar-options"><a href="#">Tasks</a></div>
+            <div class="navbar-settings navbar-options"><a href="#">Settings</a></div>
+        </div>
     </header>
 
-    <main>
-        <section id="task_input_section">
-            <div class="add-task">
-                <span class="add-task-label">Add a New Task</span>
-                <button class="add-task-button">+</button>
-            </div>
-            <div class="task-input_box">
-                <input type="text" placeholder="Enter a task" class="new-task-input">
-            </div>
-        </section>
+    <div class="add-task">
+        <input placeholder="Enter a task" class="task-input">
+        <button class="add-button" type="button">Add</button>
+    </div>
 
-        <section id="task_list">
-            <ul id="task_items">
+    <ul class="task-items">
+        
+    </ul>
 
-            </ul>
-        </section>
-    </main>
     <script src="script.js"></script>
 </body>
 </html>
